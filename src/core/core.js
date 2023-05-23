@@ -34,8 +34,6 @@ function routeRender(routes) {
     // 여러번의 리턴이 일어나 여러번 값을 받아 완성된 acc(객체데이터)를 query(변수)에 저장
     history.replaceState(query, "");
 
-    console.log(query);
-
     const currentRoute = routes.find((route) => new RegExp(`${route.path}/?$`).test(hash)); //현재 주소와 만들어둔 컴포넌트 path와 비교
     routerView.innerHTML = "";
     routerView.append(new currentRoute.component().el);
