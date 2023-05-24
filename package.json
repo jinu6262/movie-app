@@ -13,5 +13,8 @@
     "devDependencies": {
         "parcel": "^2.8.3",
         "vercel": "^29.4.0"
+    },
+    "dependencies": {
+        "node-fetch": "^2.6.11"
     }
 }
